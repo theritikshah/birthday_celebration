@@ -1,0 +1,133 @@
+.main {
+  position: relative;
+  /* set position to relative so that the ::before pseudo-element can be positioned correctly */
+  min-height: calc(100vh - 4rem);
+  width: calc(100vw - 4rem);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  background-image: url('/assests/background.jpg');
+
+
+}
+
+.main {
+
+  h2,
+  h1 {
+    text-align: center;
+    color: #116660
+  }
+
+  .hey {
+    position: absolute;
+    width: 160px;
+    height: 124px;
+    left: 200.67px;
+    top: 21px;
+
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 121.1%;
+    /* or 62px */
+
+    text-align: center;
+
+    color: #116660;
+
+    transform: rotate(13.37deg);
+  }
+
+  p {
+    font-size: 22px;
+    // text-align: center;
+  }
+
+
+
+}
+
+
+
+/* .main::before {
+  content: "";
+  position: absolute; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assests/background.jpg');
+  opacity: 0.3; 
+} */
+
+.body {
+  // padding: 2rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.753);
+
+  .ok_button {
+    align-self: flex-end;
+    // margin-top: 20px;
+
+  }
+
+  .cake_time {
+    color: #D61E31;
+    font-size: 51px;
+  }
+}
+
+.celebration_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    text-align: center;
+  }
+
+  input[type=range] {
+    margin-top: 30px;
+  }
+
+
+
+  .gift_button {
+    margin-top: 60px;
+    display: flex;
+    padding: 20px;
+    background-image: url('/assests/button-2.png');
+    width: 220px;
+    background-repeat: no-repeat;
+    height: 80px;
+    justify-content: center;
+
+    h2 {
+      margin-top: -5px;
+      color: white;
+    }
+
+  }
+
+}
+
+.gift_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  p {
+    text-align: center;
+    font-size: 23px;
+  }
+}

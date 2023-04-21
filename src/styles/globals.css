@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Yomogi', sans-serif, 'Pacifico', cursive;
+
+}
+
+h2,h1{
+  font-family: 'Pacifico';
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #a4e4e4;
+  border-radius: 0.5rem;
+  height: 0.3rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -16px; /* Centers thumb on the track */
+  /* background-color: #ff0000; */
+  background-image: url('/assests/knife.png');
+  background-size: 70px 50px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  /* border-radius: 5.5rem; */
+  height: 50px;
+  width:70px;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  /* outline: 3px solid #ff0000; */
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #71c5c5;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #ff0000;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 5.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  /* outline: 3px solid #ff0000; */
+  outline-offset: 0.125rem;
+}
